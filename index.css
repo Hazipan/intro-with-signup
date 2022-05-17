@@ -8,9 +8,8 @@ html {
 }
 
 body {
-    background: url("./images/bg-intro-desktop.png");
     background-color: hsl(0, 100%, 74%);
-    font-family:'Poppins', sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-size: 16px;
     height: 97vh;
     display: flex;
@@ -21,7 +20,7 @@ body {
 
 body::after {
     content: "";
-    background: url("./images/bg-intro-desktop.png"); 
+    background: url("./images/bg-intro-desktop.png");
     position: fixed;
     top: 0;
     left: 0;
@@ -39,6 +38,7 @@ main {
     height: 100%;
     gap: 25px;
 }
+
 .description {
     padding-left: 150px;
     font-size: 14px;
@@ -117,7 +117,7 @@ form {
 }
 
 .redColor:focus {
-    outline-color: hsl(0, 100%, 74%) ;
+    outline-color: hsl(0, 100%, 74%);
 }
 
 .errorIcon {
@@ -165,14 +165,14 @@ a {
     font-weight: 600;
 }
 
-.attribution { 
+.attribution {
     font-size: 11px;
     text-align: center;
     color: white;
 }
 
 .attribution a {
-    color:hsl(250, 37%, 45%);
+    color: hsl(250, 37%, 45%);
 }
 
 @media(max-width: 750px) {
@@ -180,41 +180,53 @@ a {
         height: inherit;
     }
 
-    .heading {
-        text-align: center;
+    body::after {
+        content: "";
+        background: url("./images/bg-intro-mobile.png");
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+        opacity: 0.5;
     }
 
-    .subHeading {
-        text-align: center;
-    }
+        .heading {
+            text-align: center;
+        }
 
-    main {
-        flex-direction: column;
-    }
+        .subHeading {
+            text-align: center;
+        }
 
-    .description {
-        padding: 0 10px 0 10px;
-    }
+        main {
+            flex-direction: column;
+        }
 
-    .promo {
-        padding: 15px 75px;
-        width: 170px;
-    }
+        .description {
+            padding: 0 10px 0 10px;
+        }
 
-    .signup {
-        padding: 0 10px 0 10px;
-    }
+        .promo {
+            padding: 15px 75px;
+            width: 170px;
+        }
 
-    .formInput {
-        width: 200px;
-    }
+        .signup {
+            padding: 0 10px 0 10px;
+        }
 
-    .submit {
-        width: 200px;
-        padding: 0px 18px;
-    }
+        .formInput {
+            width: 200px;
+        }
 
-    .attribution {
-        font-size: 8px;
+        .submit {
+            width: 200px;
+            padding: 0px 18px;
+        }
+
+        .attribution {
+            font-size: 8px;
+        }
     }
-}
