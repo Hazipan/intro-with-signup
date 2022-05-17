@@ -58,6 +58,10 @@ main {
 
 .signup {
     padding-right: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .promo {
@@ -152,6 +156,7 @@ form {
     font-size: 11px;
     margin-top: 0px;
     color: hsl(246, 25%, 77%);
+    text-align: center;
 }
 
 a {
@@ -168,4 +173,48 @@ a {
 
 .attribution a {
     color:hsl(250, 37%, 45%);
+}
+
+@media(max-width: 750px) {
+    body {
+        height: inherit;
+    }
+
+    .heading {
+        text-align: center;
+    }
+
+    .subHeading {
+        text-align: center;
+    }
+
+    main {
+        flex-direction: column;
+    }
+
+    .description {
+        padding: 0 10px 0 10px;
+    }
+
+    .promo {
+        padding: 15px 75px;
+        width: 170px;
+    }
+
+    .signup {
+        padding: 0 10px 0 10px;
+    }
+
+    .formInput {
+        width: 200px;
+    }
+
+    .submit {
+        width: 200px;
+        padding: 0px 18px;
+    }
+
+    .attribution {
+        font-size: 8px;
+    }
 }
